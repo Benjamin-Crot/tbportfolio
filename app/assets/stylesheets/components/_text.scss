@@ -1,8 +1,31 @@
 h4 {
-  color: #5D2EE2;
+  color: $purple;
   font-weight : bold;
 }
 
 h3 {
   font-weight: bold;
+}
+h1{
+  color: black;
+  font-weight: bold;
+}
+
+
+h5{
+  color: black;
+  font-weight: bold;
+}
+
+
+h5 span{
+    color: $purple;
+}
+
+p{
+  color: gray;
+}
+
+a:hover {
+  text-decoration: none;
 }
