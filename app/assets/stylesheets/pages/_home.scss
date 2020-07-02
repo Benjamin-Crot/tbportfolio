@@ -1,1 +1,309 @@
-// Specific CSS for your home-page
+.card-home {
+  background-color: white;
+  border-radius: 5px;
+
+  h4 {
+    text-align: center;
+  }
+
+  h6 {
+    color: $purple;
+    text-align: center;
+  }
+}
+
+.profiles-pics {
+  // display: flex;
+}
+
+.techno-used {
+  h2{
+    text-align: center;
+  }
+}
+
+.softs {
+  height: 530px;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .soft {
+    width: 160px;
+    height: 160px;
+    border-radius: 160px;
+    position: absolute;
+    transform-origin: center;
+    background-color: #fff;
+    // background-color: red;
+    box-shadow: 0 4px 24Px 0 rgba(0,0,0,.08);
+
+    img {
+      width: 70%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+
+  .size-1 {
+    width: 66px;
+    height: 66px;
+    border-radius: 66px;
+  }
+
+  .size-2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+  }
+
+  .size-3 {
+    width: 85px;
+    height: 85px;
+    border-radius: 85px;
+  }
+
+  .size-4 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+  }
+
+  .size-5 {
+    width: 160px;
+    height: 160px;
+    border-radius: 160px;
+  }
+
+  .size-6 {
+    width: 165px;
+    height: 165px;
+    border-radius: 165px;
+  }
+
+  .soft.bubble-1 {
+    top: -5%;
+    left: -3%;
+    animation-duration: 200s;
+  }
+
+  .soft.bubble-2 {
+    top: 50%;
+    left: -3%;
+    animation-duration: 400s;
+    animation-delay: .1s;
+  }
+
+  .soft.bubble-3 {
+    top: 6%;
+    left: 0;
+    animation-duration: 600s;
+    animation-delay: .3s;
+  }
+
+  .soft.bubble-4 {
+    top: 3%;
+    left: 54%;
+    animation-duration: 200s;
+    animation-delay: .5s;
+  }
+
+  .soft.bubble-5 {
+    top: 56%;
+    left: 53%;
+    animation-duration: 300s;
+    animation-delay: .7s;
+  }
+
+  .soft.bubble-6 {
+    top: 24%;
+    left: 52%;
+    animation-duration: 100s;
+    animation-delay: .9s;
+  }
+
+  .soft.bubble-7 {
+    top: 13%;
+    left: 71%;
+    animation-duration: 600s;
+    animation-delay: 1s;
+  }
+
+  .soft.bubble-8 {
+    top: 43%;
+    left: 0;
+    animation-duration: 500s;
+    animation-delay: 1.1s;
+  }
+
+  .soft.bubble-9 {
+    top: 76%;
+    left: 20%;
+    animation-duration: 400s;
+    animation-delay: 1.3s;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .bubble-1 {
+    top: -6%;
+    left: 5%;
+  }
+
+  .bubble-2 {
+    top: 35%;
+    left: -2%;
+  }
+
+  .bubble-3 {
+    top: 8%;
+    left: 17%;
+  }
+
+  .bubble-4 {
+    top: 3%;
+    left: 54%;
+  }
+
+  .bubble-5 {
+    top: 73%;
+    left: 61%;
+  }
+
+  .bubble-6 {
+    top: 33%;
+    left: 60%;
+  }
+
+  // .bubble-7 {
+  //   top: -6%;
+  //   left: 5%;
+  // }
+
+  .bubble-8 {
+    top: 43%;
+    left: 23%;
+  }
+
+  .bubble-9 {
+    top: 78%;
+    left: 17%;
+  }
+}
+
+@media (min-width: 992px) {
+  .softs {
+    height: 400px;
+
+    .soft {
+      animation: shake ease-in-out infinite;
+
+    }
+
+    .bubble-1 {
+      top: -5%;
+      left: -3%;
+    }
+
+    .bubble-2 {
+      top: 50%;
+      left: -3%;
+    }
+
+    .bubble-3 {
+      top: 14%;
+      left: 11%;
+    }
+
+    .bubble-4 {
+      top: 12%;
+      left: 39%;
+    }
+
+    .bubble-5 {
+      top: 51%;
+      left: 32%;
+    }
+
+    .bubble-6 {
+      top: 34%;
+      left: 54%;
+    }
+
+    // .bubble-7 {
+    //   top: -6%;
+    //   left: 5%;
+    // }
+
+    .bubble-8 {
+      top: 47%;
+      left: 78%;
+    }
+
+    .bubble-9 {
+      top: -14%;
+      left: 90%;
+    }
+  }
+
+}
+
+@keyframes shake {
+  0% { transform: translate(0); }
+  2% { transform: translate(7px,8px); }
+  4% { transform: translate(-9px,8px); }
+  6% { transform: translate(-3px,10px); }
+  8% { transform: translate(9px,7px); }
+  10% { transform: translate(6px,-9px); }
+  12% { transform: translate(-4px,9px); }
+  14% { transform: translate(1px,2px); }
+  16% { transform: translateY(10px); }
+  18% { transform: translate(-7px,8px); }
+  20% { transform: translate(8px,-9px); }
+  22% { transform: translateY(9px); }
+  24% { transform: translate(7px,-8px); }
+  26% { transform: translate(-6px,1px); }
+  28% { transform: translateY(5px); }
+  30% { transform: translate(3px,8px); }
+  32% { transform: translate(10px,-1px); }
+  34% { transform: translate(8px,4px); }
+  36% { transform: translate(4px,-8px); }
+  38% { transform: translate(-3px,6px); }
+  40% { transform: translate(-2px,-3px); }
+  42% { transform: translate(10px,4px); }
+  44% { transform: translate(-7px,3px); }
+  46% { transform: translate(2px,3px); }
+  48% { transform: translate(-5px); }
+  50% { transform: translate(1px,9px); }
+  52% { transform: translate(-7px,1px); }
+  54% { transform: translate(2px,10px); }
+  56% { transform: translate(-8px,4px); }
+  58% { transform: translate(1px,-3px); }
+  60% { transform: translate(1px,1px); }
+  62% { transform: translate(10px,-3px); }
+  64% { transform: translate(-7px,8px); }
+  66% { transform: translate(1px,5px); }
+  68% { transform: translate(1px); }
+  70% { transform: translate(10px,4px); }
+  72% { transform: translate(-4px,8px); }
+  74% { transform: translate(3px,8px); }
+  76% { transform: translate(9px,8px); }
+  78% { transform: translate(9px,-5px); }
+  80% { transform: translate(-3px,-9px); }
+  82% { transform: translate(8px,5px); }
+  84% { transform: translate(-9px,-9px); }
+  86% { transform: translate(4px,-3px); }
+  88% { transform: translate(2px,-3px); }
+  90% { transform: translate(9px,7px); }
+  92% { transform: translate(5px,-5px); }
+  94% { transform: translate(6px,8px); }
+  96% { transform: translate(9px); }
+  98% { transform: translate(-4px,-6px); }
+  100% { transform: translate(0); }
+}
+
+
