@@ -1,3 +1,20 @@
 a {
   text-decoration: none!important;
 }
+
+
+@media (min-width: 100px) and (max-width: 575px) {
+ div#carre {
+ height: 180px;
+ width: 180px;
+ }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 1200px) {
+  div.card{
+    margin: 25px;
+  }
+
+}
