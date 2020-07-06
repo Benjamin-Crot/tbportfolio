@@ -29,3 +29,16 @@ p{
 a:hover {
   text-decoration: none;
 }
+
+.title{
+  // padding-top: 10%;
+  padding-bottom: 10%;
+  h2{
+    color: black;
+    font-weight: bold;
+  }
+  h2.purple{
+    color: $purple;
+  }
+
+}
