@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get "apropos", to: "pages#apropos"
   get "contact", to: "pages#contact"
 
+  resources :contacts, only: [ :new, :create ]
+
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
