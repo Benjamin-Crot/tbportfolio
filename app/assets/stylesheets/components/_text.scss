@@ -40,25 +40,25 @@ a:hover {
   h2.purple{
     color: $purple;
   }
+}
 
 
 @media (min-width: 100px) and (max-width: 575px) {
   body {
-width: 140%;
-
+    width: 140%;
   }
 }
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
- body  {
-width: 100%;
+  body  {
+    width: 100%;
   }
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 1200px) {
   body {
-width: 100%
+    width: 100%;
   }
 }
