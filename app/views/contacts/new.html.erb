@@ -3,21 +3,8 @@
     <h2>Besoin de plus d'information ?</h2>
     <h2 class="purple">Envoyez-nous un message</h2>
   </div>
+
   <div class="container" style="margin-bottom: 30px;">
-    <div class="row">
-      <div class="col-12 col-md-6">
-        <%= inline_svg_tag "letter.svg", class: 'some-class' %>
-      </div>
-      <div class="col-12 col-md-6">
-        <%= simple_form_for @contact do |f| %>
-          <%= f.input :last_name, label: false, placeholder: 'Nom' %>
-          <%= f.input :first_name, label: false, placeholder: 'Prénom' %>
-          <%= f.input :email, label: false, placeholder: 'Email' %>
-          <%= f.input :message, label: false, placeholder: 'Votre message' %>
-          <%= f.button :submit, 'Envoyer', class:"btn-cta large" %>
-        <% end %>
-      </div>
-    </div>
+    <%= render 'contact_form' %>
   </div>
 </div>
-

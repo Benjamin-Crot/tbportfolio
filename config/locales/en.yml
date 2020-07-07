@@ -29,5 +29,41 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
+# en:
+#   hello: "Hello world"
+
+
+  # errors:
+  #   # The default format to use in full error messages.
+  #   format: "%{message}"
+
+    # The values :model, :attribute and :value are always available for interpolation
+    # The value :count is available when applicable. Can be used for pluralization.
+    # activerecord:
+    #     attributes:
+    #       message:
+    #         blank: "Titre de la catégorie"
+      # activerecord:
+      #   models:
+      #     contact:
+      #       attributes:
+      #         message:
+      #           blank: "%{attribute} is empty."
 en:
-  hello: "Hello world"
+  and: "et"
+
+  errors:
+    format:
+      "%{message}"
+
+  activerecord:
+    errors:
+      models:
+        contact:
+          attributes:
+            message:
+              blank: "Ce champ n'est pas rempli"
+            email:
+              blank: "Ce champ n'est pas rempli"
+              invalid: "Invalide"
+

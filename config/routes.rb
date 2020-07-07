@@ -4,9 +4,9 @@ Rails.application.routes.draw do
 
   get "portfolio", to: "pages#portfolio"
   get "apropos", to: "pages#apropos"
-  get "contact", to: "pages#contact"
+  # get "contact", to: "pages#contact"
 
-  resources :contacts, only: [ :new, :create ]
+  resources :contacts, only: [ :new, :create, :index ]
 
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
