@@ -5,21 +5,6 @@
   </div>
 
   <div class="container" style="margin-bottom: 30px;">
-    <%= simple_form_for @contact do |f| %>
-      <div class="row" style="margin-bottom: 30px;">
-        <div class="col-12 col-md-6">
-          <%= inline_svg_tag "letter.svg", class: 'letter-svg' %>
-        </div>
-        <div class="col-12 col-md-6" style="margin: auto;">
-          <%= f.input :last_name, label: 'Nom', placeholder: 'Paul' %>
-          <%= f.input :first_name, label: 'Prénom', placeholder: 'Dupont' %>
-          <%= f.input :email, label: 'Email', placeholder: 'paul.dupont@email.com', required: false %>
-        </div>
-      </div>
-      <%= f.input :message, label: 'Message', placeholder: 'Votre message', required: false %>
-      <%= f.button :submit, 'Envoyer', class:"btn-cta large" %>
-    <% end %>
+    <%= render 'contact_form' %>
   </div>
 </div>
-
-

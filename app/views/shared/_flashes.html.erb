@@ -1,6 +1,9 @@
 <% if notice %>
-  <div class="alert alert-info alert-dismissible fade show m-1" role="alert">
-    <%= notice %>
+  <div class="alert flash-notice d-flex justify-content-center align-items-center fade show m-1 sticky-bottom" role="alert">
+    <i class="fas fa-check-circle" style="color: green; margin-right: 7px;"></i>
+    <div>
+      <%= notice %>
+    </div>
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
@@ -14,3 +17,4 @@
     </button>
   </div>
 <% end %>
+
