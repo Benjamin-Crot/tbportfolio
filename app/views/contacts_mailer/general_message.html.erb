@@ -1,6 +1,4 @@
-<h1>Nouveau message de votre site : Tom & Ben </h1>
+<h1><%= @contact.last_name %> <%= @contact.first_name %> a envoyé un message</h1>
 
-<h2>Message de <%= @contact.first_name %><%= @contact.last_name %></h2>
-
-<p><%= @contact.email %></p>
-<p><%= @contact.message %></p>
+<p><strong>Email :</strong> <%= @contact.email %></p>
+<p><strong>Message :</strong> <%= @contact.message %></p>
