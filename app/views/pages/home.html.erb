@@ -1,39 +1,46 @@
 <div class="main-container">
-  <h5><span class="h5color">HELLO</span>, c'est Tom et Ben</h5>
-  <h1>FULL-STACK DEVELOPERS</h1>
-  <p>Nous sommes developeur freelance, n'hésitez pas à nous contacter.</p>
-  <%= link_to "Contactez-nous", contact_path, class: "btn-cta" %>
+  <div class="pl-5">
+    <h5><span class="h5color">HELLO</span>, c'est Tom et Ben</h5>
+    <h1>FULL-STACK DEVELOPERS</h1>
+    <p>Nous sommes developeur freelance, n'hésitez pas à nous contacter.</p>
+    <%= link_to "Contactez-nous", new_contact_path, class: "btn-cta" %>
+  </div>
   <div class="profiles-pics d-flex align-items-end justify-content-end">
-    <%= cl_image_tag("Pictinterview-removebg-preview_1_ykbb9g.png", :width => 300) %>
+    <%= image_tag("tomtom.png", :width => 300) %>
     <%= cl_image_tag("DSC_4572-1_Benjamin_Crot_htbmu7.png", :width => 300) %>
   </div>
 
   <div class="card-home">
+    <div  class="container">
     <h6>Nos compétences</h6>
     <h4>Concepteur de site internet</h4>
+      <div class="row">
+        <div class="skills col-6">
+          UI-UX
+        </div>
+        <div class="skills col-6">
+          Web-app
+        </div>
+        <div class="skills col-6">
+          Design
+        </div>
+        <div class="skills col-6">
+          E-commerce
+        </div>
+        <div class="skills col-6">
+          API
+        </div>
+        <div class="skills col-6">
+          MVP
+        </div>
+        <div class="skills col-6">
+          Web-scrapping
+        </div>
+        <div class="skills col-6">
+          CMS
+        </div>
+      </div>
 
-    <div class="row">
-      <div class="skills col-6">
-        UI-UX
-      </div>
-      <div class="skills col-6">
-        Design
-      </div>
-      <div class="skills col-6">
-        E-commerce
-      </div>
-      <div class="skills col-6">
-        API
-      </div>
-      <div class="skills col-6">
-        MVP
-      </div>
-      <div class="skills col-6">
-        Web-scrapping
-      </div>
-      <div class="skills col-6">
-        CMS
-      </div>
     </div>
   </div>
 
@@ -46,7 +53,7 @@
     <div class="row">
       <div class="col-md-12">
         <ul class="softs">
-          <li class="soft bubble-1 size-1">
+          <li class="soft bubble-1 size-6">
             <%= cl_image_tag("Ruby_On_Rails_Logo.svg_tg6l2q.png") %>
           </li>
           <li class="soft bubble-2 size-2">
@@ -61,14 +68,25 @@
           <li class="soft bubble-9 size-6">
             <%= cl_image_tag("1280px-Wix.com_website_logo.svg_vr5fyw.png") %>
           </li>
+          <li class="soft bubble-5 size-1">
+            <%= image_tag("html.png") %>
+          </li>
+          <li class="soft bubble-6 size-2">
+            <%= image_tag("js.png") %>
+          </li>
+          <li class="soft bubble-7 size-4">
+            <%= image_tag("wp.png") %>
+          </li>
+          <li class="soft bubble-8 size-4">
+            <%= image_tag("css.png") %>
+          </li>
+          <li class="soft bubble-10 size-1">
+            <%= image_tag("db.png") %>
+          </li>
+
         </ul>
       </div>
     </div>
   </div>
-
-
-
-
 </div>
 
-<%= render 'shared/footer' %>

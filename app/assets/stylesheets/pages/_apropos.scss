@@ -39,7 +39,7 @@ img.picture-about {
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
   .cards-about {
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr 1fr ;
   }
 }
 
@@ -61,7 +61,7 @@ img.picture-about {
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
   .cards-team {
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr 1fr ;
   }
 }
 

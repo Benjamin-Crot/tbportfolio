@@ -1,16 +1,11 @@
-.cards {
-  flex-grow: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-  grid-gap: 16px;
-  padding: 16px;
-}
+
 
 
 .card {
   background-size: cover;
   background-position: center;
-  height: 235px;
+  height: 500px;
+  width: 600px;
   border-radius: 1px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   display: flex;
@@ -20,34 +15,14 @@
   color: white;
   font-weight: bolder;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  margin: 10px;
 }
 
 div.card {
-  opacity : 0.1;
+  opacity : 0.8;
 }
 
 div.card:hover {
   opacity: 1;
 }
 
-
-
-@media (min-width: 100px) and (max-width: 575px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 1200px) {
-  .cards {
-    grid-template-columns: 1fr 1fr ;
-  }
-}

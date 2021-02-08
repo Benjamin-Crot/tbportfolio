@@ -12,7 +12,7 @@
         <%= simple_form_for @contact do |f| %>
           <%= f.input :last_name, label: false, placeholder: 'Nom' %>
           <%= f.input :first_name, label: false, placeholder: 'Prénom' %>
-          <%= f.input :email, label: false, placeholder: 'Email' %>
+          <%= f.input :email, label: false, placeholder: 'Email'%>
           <%= f.input :message, label: false, placeholder: 'Votre message' %>
           <%= f.button :submit, 'Envoyer', class:"btn-cta large" %>
         <% end %>

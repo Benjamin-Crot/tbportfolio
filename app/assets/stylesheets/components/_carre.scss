@@ -1,15 +1,16 @@
-#carre {
-    height: 400px;
-    width: 400px;
-    background: $purple;
-    border-radius: 5px;
+div#carre {
     position: absolute;
     overflow: hidden;
     z-index: -1;
     top: -12%;
-    right: -4%;
-    -ms-transform: rotate(-20deg); /* Internet Explorer */
-    -moz-transform: rotate(-20deg); /* Firefox */
-    -webkit-transform: rotate(-20deg); /* Safari et Chrome */
-    -o-transform: rotate(-20deg); /* Opera */
+    right: 0%;
+}
+
+
+
+@media (max-width: 576px) {
+  div#carre {
+    top: 0%;
+    right: -41%;
+  }
 }

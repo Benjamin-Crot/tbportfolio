@@ -21,8 +21,8 @@
 
 <div class="container mt-5 sm-mt-0 ">
    <div class= "cards-team text-center ">
-    <div class= "card-team  p-3 sm-mt-5">
-      <%= image_tag "ben-photo.jpg", height: 150, class:"picture-about" %>
+    <div class= "card-team d-flex flex-column justify-content-between  p-3 sm-mt-5">
+      <%= image_tag "ben-photo.jpg", height: 150, width: 167, class:"picture-about", style:"margin:auto; margin-bottom:5px;" %>
       <div class="d-flex justify-content-center">
         <div class="pr-2">
          <b> <h4> Benjamin </h4> </b>
@@ -33,13 +33,12 @@
       </div>
       <br>
       <p> Après l’obtention d’une licence de droit puis d’un master 2 d’école de commerce, j’ai travaillé pour plusieurs startup en tant que Sales Manager. </p>
-<p>Passionné depuis toujours par les nouvelles technologie, j’ai alors décidé d’apprendre à coder au Wagon et d’en faire mon métier. </p>
-<div class="d-flex justify-content-between align-items-end">
-    <i class="fab fa-linkedin fa-3x" style="color:#4D6EF5"></i>
-    <%= image_tag "malt-logo.png", height: 48, width: 48 %>
-    <%= image_tag "github.png", height: 48, width: 48 %>
-
-</div>
+      <p>Passionné depuis toujours par les nouvelles technologie, j’ai alors décidé d’apprendre à coder au Wagon et d’en faire mon métier. </p>
+      <div class="d-flex justify-content-between align-items-end">
+      <i class="fab fa-linkedin fa-3x" style="color:#4D6EF5"></i>
+      <%= image_tag "malt-logo.png", height: 48, width: 48 %>
+      <%= image_tag "github.png", height: 48, width: 48 %>
+      </div>
     </div>
     <div class= "card-team  p-3 sm-mt-5">
        <%= image_tag "tom-photo.png", height: 150, class:"picture-about" %>
@@ -63,12 +62,12 @@
     </div>
   </div>
 </div>
+</iv>
 
 <!-- </div>
     <p class="text-center">Vous avez un projet ? </p>
     <p class="text-center"> Vous souhaiteriez en savoir plus sur la faisabilité, le coût et le temps de developpement?</p>
 </div> -->
 
-<%= render 'shared/footer' %>
 
 

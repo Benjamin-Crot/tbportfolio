@@ -13,9 +13,11 @@
 
   <body>
     <%= render 'shared/navbar' %>
-    <div id="carre"></div>
+    <div id="carre"> <%= image_tag "carre.png" %></div>
     <%= render 'shared/flashes' %>
 
     <%= yield %>
+    <%= render 'shared/footer' %>
+
   </body>
 </html>
