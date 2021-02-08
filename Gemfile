@@ -36,6 +36,7 @@ gem 'simple_form'
 gem 'cloudinary', '~> 1.12.0'
 gem 'mail_form'
 gem 'inline_svg'
+gem 'rails-i18n', '~> 6.0.0'
 
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'
